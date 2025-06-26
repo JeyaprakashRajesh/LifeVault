@@ -96,7 +96,7 @@ const userSchema = new mongoose.Schema({
   chats: {
     type: [
       {
-        chatId: { type: mongoose.Schema.Types.ObjectId, required: true },
+        chatId: { type: mongoose.Schema.Types.ObjectId, required: true , ref: 'Chats'},
         doctorName: { type: String, required: true },
       }
     ],
